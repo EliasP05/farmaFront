@@ -200,7 +200,7 @@ main .buscador label span{
     font-size:1.6rem ;
     position: relative;
     top: 3px;
-    left: 10px;
+    left: px;
 }
 main .buscador input[type="search"]{
     width: 100%;

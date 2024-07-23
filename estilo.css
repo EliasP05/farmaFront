@@ -334,8 +334,34 @@ main .prueba .buscar button{
     border-radius: var(--border-radius-2);
     font-weight: 600;
     font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+  main .prueba .buscar button:active{
+      letter-spacing: 2px;
+  }
+  main .prueba .buscar button:hover{
+    color:white;
+    background: var(--principal);
+  }
+  main .prueba .buscar button span{
 
-}
+  }
+  .spinner{
+    margin: auto;
+    width: 25px;
+    height: 25px;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    display: none;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
 main .prueba .buscar button:hover{
     cursor: pointer;
 }

@@ -236,7 +236,7 @@ main .prueba .insights>div:nth-child(1){
 main .prueba .insights>div:nth-child(2){
     border-top-right-radius: var(--card-border-radius);
 }
-main .prueba .insights >div:hover{
+main .prueba .insights>div:hover{
     box-shadow: none;
 }
 main .prueba .insights>div span, main .prueba .recent-orders .head-result> span{
@@ -276,6 +276,7 @@ main .prueba .insights h1{
     color: var(--dark);
 }
 main .prueba .insights .progreso{
+    color: var(--color-dark);
     position: relative;
     width: 92px;
     height: 92px;
@@ -321,8 +322,27 @@ main .insights small{
     margin-top:1.6rem;
     display: block;
 }
+/* boton-prueba */
+main .prueba .buscar{
+    margin-top: 1rem;
+}
+main .prueba .buscar button{
+    background: var(--color-white);
+    color: var(--dark);
+    width: 100%;
+    padding: .5rem 0px;
+    border-radius: var(--border-radius-2);
+    font-weight: 600;
+    font-size: 1.2rem;
+
+}
+main .prueba .buscar button:hover{
+    cursor: pointer;
+}
 /* Resultado */
+
 main .prueba .recent-orders{
+    display: none;
 padding: var(--card-padding);
 /* border-radius: var(--card-border-radius); */
 border-bottom-left-radius: var(--card-border-radius);
@@ -380,29 +400,7 @@ main .prueba .noprobado .middle .left h1{
     color: var(--text-noprobado);
 }
 
-/*main .prueba .recent-orders table{
-    background: var(--color-white);
-    width: 100%;
-    border-radius: var(--card-border-radius);
-    padding: var(--card-padding);
-    text-align: center;
-    box-shadow: var(--box-shadow);
-    transition: all 300ms ease;
-}
- main .recent-orders table thead{
-    color: var(--dark);
-} 
-main .prueba .recent-orders table:hover{
-    box-shadow: none;
-}
- main table tbody td{
-    height: 2.5rem;
-    border-bottom: 1px solid var(--text-secund);
-    color: var(--text-dark);
-}
-main table tbody tr:last-child td{
-    border: none;
-} */
+
 main .prueba .recent-orders a{
     text-align: center;
     display: block;
@@ -423,6 +421,7 @@ main .prueba .recent-orders a{
     display: none;
 }
 .right .theme-toggler{
+    color: var(--dark);
     background: var(--background);
     display:flex;
     justify-content: space-between;
@@ -431,6 +430,7 @@ main .prueba .recent-orders a{
     width: 4.2rem;
     cursor:pointer;
     border-radius: var(--border-radius-1);
+    transition: all 300ms ease;
 }
 .right .theme-toggler span{
     font-size: 1.2rem;
@@ -442,14 +442,14 @@ main .prueba .recent-orders a{
 }
 .right .theme-toggler span.active{
     background:  var(--principal);
-    color:white;
+    color:var(--background);
     border-radius: var(--border-radius-1);
 }
 .right .top .profile{
     display: flex;
     gap: 2rem;
     text-align: right;
-    
+    color: var(--dark);
 }
 
 /* RECENT UPDATES */
@@ -458,6 +458,7 @@ main .prueba .recent-orders a{
 }
 .right .recent-updates h2{
     margin-bottom: 0.8rem;
+    color: var(--dark);
 }
 .right .recent-updates .updates{
     background: var(--background);

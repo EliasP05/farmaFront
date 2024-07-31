@@ -245,7 +245,7 @@ main .prueba .insights>div span, main .prueba .recent-orders .head-result> span{
     border-radius: 50%;
     color:var(--color-white);
     font-size: 2rem;
-    display: none;
+
 }
 main .prueba .insights>div.income span{
     background: var(--principal);
@@ -322,6 +322,26 @@ main .insights small{
     margin-top:1.6rem;
     display: block;
 }
+main .prueba .insights .sales,
+main .prueba .insights .expenses{
+    position: relative;
+}
+main .prueba .insights .sales .close-farm,
+main .prueba .insights .expenses .close-farm{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  main .prueba .insights .sales .close-farm span,
+  main .prueba .insights .expenses .close-farm span{
+    padding: 0;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    background: none;
+    color: var(--text-incierto);
+  }
 /* boton-prueba */
 main .prueba .buscar{
     margin-top: 1rem;
@@ -502,6 +522,10 @@ main .prueba .recent-orders a{
     grid-template-columns: 2.6rem auto;
     gap :1rem;
     margin-bottom: 1rem;
+    cursor: pointer;
+}
+.right .recent-updates .updates .update span{
+    color: var(--principal);
 }
 .right .sales-analytics{
     margin-top: 2rem;

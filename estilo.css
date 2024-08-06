@@ -217,6 +217,19 @@ main .buscador input[type="search"]{
 main .buscador input[type="search"]::-webkit-search-cancel-button{
 color: var(--text-secund);
 }
+main .farmacos{
+    margin-top: 1rem;
+}
+main .farmacos table{
+    width: 40%;
+    margin: auto;
+    
+    text-align: center;
+}
+main .farmacos table td{
+    border-bottom: solid 1px var(--text-principal);
+    padding: 1rem;
+}
 main .prueba .insights{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
